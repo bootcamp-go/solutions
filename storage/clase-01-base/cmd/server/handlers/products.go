@@ -28,9 +28,9 @@ type ResponseProduct struct {
 	Price	float64	`json:"price"`
 }
 type ResponseBody struct {
-	Message string			`json:"message"`
+	Message string			 `json:"message"`
 	Data    *ResponseProduct `json:"data"`
-	Error   bool			`json:"error"`
+	Error   bool			 `json:"error"`
 }
 func (c *ControllerProduct) GetOne() http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
